@@ -9,8 +9,8 @@
  * @returns {Array}
  */
 function getIncompleteTodos(todos) {
-  return todos.filter((list) => {
-    return list.completed === false;
+  return todos.filter((todo) => {
+    return todo.completed === false;
   });
 }
 

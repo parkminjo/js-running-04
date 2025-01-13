@@ -10,7 +10,14 @@
  * @param {Array} users
  * @returns {Array}
  */
-function transformUsers(users) {}
+function transformUsers(users) {
+  return users.map((user) => {
+    return {
+      fullName: user.firstName + " " + user.lastName,
+      isAdult: user.age >= 20,
+    };
+  });
+}
 
 // export 수정 불가
 export { transformUsers };
